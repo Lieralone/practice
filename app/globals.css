@@ -1,0 +1,111 @@
+@import "tailwindcss";
+/* color scheme */
+:root {
+  /* surface colors */
+  --bg-primary: #0f1a12;
+  --bg-secondary: #162118;
+  --bg-tertiary: #1e2d22;
+  --bg-hover: #26382c;
+  /* accent colors */
+  --green-primary: #4ade80;
+  --green-secondary: #22c55e;
+  --green-dim: #16a34a;
+  --green-glow: rgba(74, 222, 128, 0.15);
+  /* text colors */
+  --text-primary: #e8f5e9;
+  --text-secondary: #a3c9ad;
+  --text-muted: #6b8f73;
+  --text-inverse: #0f1a12;
+
+  /* border colors */
+  --border-default: #2a3e30;
+  --border-subtle: #1e2d22;
+  --border-accent: #4ade80;
+
+  /* connection group accent colors */
+  --group-yellow: #facc15;
+  --group-green: #4ade80;
+  --group-blue: #60a5fa;
+  --group-purple: #c084fc;
+
+  --group-yellow-bg: rgba(250, 204, 21, 0.15);
+  --group-green-bg: rgba(74, 222, 128, 0.15);
+  --group-blue-bg: rgba(96, 165, 250, 0.15);
+  --group-purple-bg: rgba(192, 132, 252, 0.15);
+
+  /* status colors */
+  --success: #4ade80;
+  --error: #f87171;
+  --warning: #fbbf24;
+
+  /* misc */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-glow: 0 0 20px rgba(74, 222, 128, 0.1);
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+@theme inline {
+  /* base */
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+
+  /* text */
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* borders */
+  --color-border: var(--border-default);
+  --color-border-subtle: var(--border-subtle);
+
+  /* accents */
+  --color-primary: var(--green-primary);
+  --color-primary-dim: var(--green-dim);
+
+  /* surfaces */
+  --color-surface: var(--bg-secondary);
+  --color-surface-elevated: var(--bg-tertiary);
+
+  /* fonts */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-pixel: var(--font-pixel);
+}
+
+/* base / reset styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans, "Inter", "Segoe UI", sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* smooth scroll on the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar theming for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-dim);
+}
