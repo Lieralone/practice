@@ -8,6 +8,7 @@
  */
 "use client";
 
+import { useState } from "react";
 import { Word } from "@/types/game";
 
 interface WordTileProps {
@@ -23,6 +24,11 @@ export default function WordTile({
   isDisabled,
   onClick,
 }: WordTileProps) {
+  const [showHint, setShowHint] = useState(false);
+  const hasHint =
+    word.language === "kapampangan" || word.language === "pangasinense";
+  const hintText = word.translation ? word.translation : "Hint available";
+
   return (
     <button
       id={`tile-${word.id}`}
@@ -86,10 +92,23 @@ export default function WordTile({
         >
           {word.text}
         </span>
-        {(word.language === "kapampangan" || word.language === "pangasinense") && (
+        {hasHint && (
           <span
-            aria-label={word.translation ? `Hint: ${word.translation}` : "Hint available"}
-            title={word.translation ? word.translation : "Hint available"}
+            role="button"
+            tabIndex={0}
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowHint((current) => !current);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                e.stopPropagation();
+                setShowHint((current) => !current);
+              }
+            }}
+            aria-label={`Translation: ${hintText}`}
+            title={hintText}
             style={{
               position: "absolute",
               top: "6px",
@@ -97,17 +116,41 @@ export default function WordTile({
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "0.95rem",
-              height: "0.95rem",
+              width: "0.85rem",
+              height: "0.85rem",
               borderRadius: "50%",
               background: "rgba(255,255,255,0.16)",
               color: "var(--text-primary)",
-              fontSize: "0.7rem",
+              fontSize: "0.65rem",
               fontWeight: 800,
               lineHeight: 1,
+              border: "1px solid transparent",
+              padding: 0,
+              cursor: "pointer",
             }}
           >
             ?
+          </span>
+        )}
+        {hasHint && showHint && (
+          <span
+            style={{
+              position: "absolute",
+              bottom: "6px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              background: "rgba(0, 0, 0, 0.85)",
+              color: "white",
+              padding: "0.3rem 0.5rem",
+              borderRadius: "0.35rem",
+              fontSize: "0.65rem",
+              maxWidth: "90%",
+              textAlign: "center",
+              zIndex: 1,
+              pointerEvents: "none",
+            }}
+          >
+            {hintText}
           </span>
         )}
       </div>
