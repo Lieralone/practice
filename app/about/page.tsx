@@ -33,7 +33,7 @@ export default function AboutPage() {
             ng laro, Glayvin Gabe Oragon bilang tagapag saliksik, Kian Marco
             Castro bilang tagapaglahad ng mga ideya, Kristan Norby Bugay bilang
             tagapagsaliksik, Lance Jacob Reyes bilang tagasulat ng pormal na papel
-            at, Lj Querijero bilang punong taga-gawa ng program ng laro.
+            at, Lysander Joseph Querijero bilang taga-gawa ng program ng laro.
           </p>
 
           <p>
