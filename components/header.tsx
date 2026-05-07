@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
 
         {/* nav */}
-        <nav className="flex flex-col items-end flex-shrink-0 gap-1">
+        <nav className="flex items-center flex-shrink-0 gap-2">
           <Link
             href="/paano-maglaro"
             className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-md border border-[var(--border-default)] bg-[var(--bg-tertiary)] text-[var(--text-secondary)] text-xs sm:text-sm font-semibold no-underline transition-colors duration-150 hover:border-[var(--green-primary)] hover:text-[var(--green-primary)]"
@@ -40,7 +40,7 @@ export default function Header() {
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
             {/* hide label on very small screens, show icon only */}
-            <span className="hidden sm:inline">Paano Maglaro</span>
+            <span className="hidden sm:inline">Mekaniks</span>
           </Link>
 
           <Link
@@ -62,7 +62,7 @@ export default function Header() {
               <line x1="12" y1="16" x2="12" y2="12" />
               <circle cx="12" cy="8" r="1" />
             </svg>
-            <span>About Us</span>
+            <span className="hidden sm:inline">About</span>
           </Link>
         </nav>
       </div>
