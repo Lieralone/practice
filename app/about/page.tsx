@@ -17,7 +17,7 @@ export default function AboutPage() {
             Bumalik
           </Link>
 
-          <h1 className="text-xl font-bold text-[var(--green-primary)] m-0">About Me</h1>
+          <h1 className="text-xl font-bold text-[var(--green-primary)] m-0">About Us</h1>
         </div>
       </header>
 
