@@ -27,7 +27,31 @@ export default function WordTile({
   const [showHint, setShowHint] = useState(false);
   const hasHint =
     word.language === "kapampangan" || word.language === "pangasinense";
-  const hintText = word.translation ? word.translation : "Hint available";
+
+  const languageName =
+    word.language === "kapampangan"
+      ? "Kapampangan"
+      : word.language === "pangasinense"
+      ? "Pangasinense"
+      : "";
+
+  const languageAccentColor =
+    word.language === "kapampangan"
+      ? "var(--kapampangan-accent)"
+      : word.language === "pangasinense"
+      ? "var(--pangasinense-accent)"
+      : "transparent";
+
+  const languageAccentBackground =
+    word.language === "kapampangan"
+      ? "var(--kapampangan-accent-bg)"
+      : word.language === "pangasinense"
+      ? "var(--pangasinense-accent-bg)"
+      : "var(--bg-tertiary)";
+
+  const hintText = word.translation
+    ? `${languageName} ng '${word.translation}'`
+    : "Hint available";
 
   return (
     <button
@@ -45,7 +69,8 @@ export default function WordTile({
         border: isSelected
           ? "2px solid var(--green-primary)"
           : "1px solid var(--border-default)",
-        background: isSelected ? "var(--green-glow)" : "var(--bg-tertiary)",
+        borderLeft: `4px solid ${languageAccentColor}`,
+        background: isSelected ? "var(--green-glow)" : languageAccentBackground,
         color: isSelected ? "var(--green-primary)" : "var(--text-primary)",
         fontSize: "clamp(0.5rem, 2.2vw, 0.75rem)",
         fontWeight: 700,
@@ -68,7 +93,7 @@ export default function WordTile({
       }}
       onMouseLeave={(e) => {
         if (!isDisabled && !isSelected) {
-          e.currentTarget.style.background = "var(--bg-tertiary)";
+          e.currentTarget.style.background = languageAccentBackground;
           e.currentTarget.style.borderColor = "var(--border-default)";
         }
       }}
@@ -107,7 +132,7 @@ export default function WordTile({
                 setShowHint((current) => !current);
               }
             }}
-            aria-label={`Translation: ${hintText}`}
+            aria-label={hintText}
             title={hintText}
             style={{
               position: "absolute",
