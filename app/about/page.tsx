@@ -17,7 +17,7 @@ export default function AboutPage() {
             Bumalik
           </Link>
 
-          <h1 className="text-xl font-bold text-[var(--green-primary)] m-0">About Us</h1>
+          <h1 className="text-xl font-bold text-[var(--green-primary)] m-0">About</h1>
         </div>
       </header>
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
             Ang laro na aming binuo ay isang uri ng web-based word game kung saan
             nilalayon nitong linaning at hasain ang karunungan ng mga manlalaro sa
             wikang Filipino. Kabilang sa mga espisipikong salitang Filipino na
-            kasama rito ay ang Tagalog, Kapampangan, at Pangasinense. Ang ninanais
+            kasama rito ay ang Tagalog, Kapampangan, at Pangasinan. Ang ninanais
             naming tagatanggap ng proyektong ito ay ang mga estudyante ng
             University of the Philippines Baguio, partikular na ang mga mag-aaral
             ng Wika I sa mga susunod na panahon. Kung papalarin, nais din naming
@@ -53,7 +53,7 @@ export default function AboutPage() {
           <p className="font-semibold text-[var(--text-primary)]">Dakal a Salamat!</p>
 
           <p className="text-[var(--text-secondary)] italic">
-            (pangasinense word for ‘salamat’)
+            (Pangasinan ng 'salamat')
           </p>
         </section>
       </main>
