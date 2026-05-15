@@ -10,7 +10,7 @@ interface LivesDisplayProps {
 export default function LivesDisplay({ remaining }: LivesDisplayProps) {
   return (
     <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-5">
-      <span className="text-[0.45rem] sm:text-xs font-semibold text-[var(--text-secondary)]">
+      <span className="text-xs sm:text-sm font-semibold leading-none text-[var(--text-secondary)]">
         Mga Pagkakataon:
       </span>
 
