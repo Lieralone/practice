@@ -42,6 +42,25 @@ export default function GameBoard({
         })}
       </div>
 
+      <div className="mb-4 rounded-xl border border-[var(--border-default)] bg-[var(--bg-tertiary)] p-3 text-sm text-[var(--text-secondary)]">
+        <div className="flex flex-wrap items-center gap-4">
+          <span className="inline-flex items-center gap-2">
+            <span
+              className="h-2.5 w-2.5 rounded-full"
+              style={{ background: "var(--kapampangan-accent)" }}
+            />
+            Kapampangan tile
+          </span>
+          <span className="inline-flex items-center gap-2">
+            <span
+              className="h-2.5 w-2.5 rounded-full"
+              style={{ background: "var(--pangasinense-accent)" }}
+            />
+            Pangasinense tile
+          </span>
+        </div>
+      </div>
+
       {/* remaining word tiles */}
       <div className="grid grid-cols-4 gap-1.5 sm:gap-2 mb-4">
         {gameState.words.map((word) => (
