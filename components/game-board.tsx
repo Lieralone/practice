@@ -49,14 +49,14 @@ export default function GameBoard({
               className="h-2.5 w-2.5 rounded-full"
               style={{ background: "var(--kapampangan-accent)" }}
             />
-            Kapampangan tile
+            Kapampangan word
           </span>
           <span className="inline-flex items-center gap-2">
             <span
               className="h-2.5 w-2.5 rounded-full"
               style={{ background: "var(--pangasinense-accent)" }}
             />
-            Pangasinense tile
+            Pangasinan word
           </span>
         </div>
       </div>
