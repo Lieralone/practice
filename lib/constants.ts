@@ -3,7 +3,7 @@ export const MAX_ATTEMPTS = 5;
 export const WORDS_PER_GROUP = 4;
 export const TOTAL_GROUPS = 4;
 export const GAME_NAME = "Kanunutan";
-export const GAME_TAGLINE = "Tagline go here";
+export const GAME_TAGLINE = "Ideya";
 
 export const GROUP_THEME = {
   yellow: {
