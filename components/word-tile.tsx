@@ -32,7 +32,7 @@ export default function WordTile({
     word.language === "kapampangan"
       ? "Kapampangan"
       : word.language === "pangasinense"
-      ? "Pangasinense"
+      ? "Pangasinan"
       : "";
 
   const languageAccentColor =
