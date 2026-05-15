@@ -28,32 +28,47 @@ export default function AboutPage() {
           </p>
 
           <p>
-            Kami ang pangkat ‘Kanunutan’, mga estudyante ng Wika I Z taong 2026
-            na binubuo nina George Allen Donayre bilang punong taga-gawa ng program
-            ng laro, Glayvin Gabe Oragon bilang tagapag saliksik, Kian Marco
-            Castro bilang tagapaglahad ng mga ideya, Kristan Norby Bugay bilang
+            Kami ang pangkat ‘Kanunutan’, mga estudyante ng Wika I Z taong 2026 na
+            binubuo nina George Allen Donayre bilang punong tagagawa ng program ng
+            laro, Glayvin Gabe Oragon bilang tagapag saliksik, Kian Marco Castro
+            bilang tagapaglahad ng mga ideya, Kristan Norby Bugay bilang
             tagapagsaliksik, Lance Jacob Reyes bilang tagasulat ng pormal na papel
-            at, Lysander Joseph Querijero bilang taga-gawa ng program ng laro.
+            at, Lysander Joseph Querijero bilang tagagawa ng program ng
+            laro.
           </p>
 
           <p>
             Ang laro na aming binuo ay isang uri ng web-based word game kung saan
-            nilalayon nitong linaning at hasain ang karunungan ng mga manlalaro sa
-            wikang Filipino. Kabilang sa mga espisipikong salitang Filipino na
-            kasama rito ay ang Tagalog, Kapampangan, at Pangasinan. Ang ninanais
-            naming tagatanggap ng proyektong ito ay ang mga estudyante ng
-            University of the Philippines Baguio, partikular na ang mga mag-aaral
-            ng Wika I sa mga susunod na panahon. Kung papalarin, nais din naming
-            magamit ang proyektong ito ng mga propesor ng nasabing unibersidad bilang
-            midyum ng panturo at pagkatuto sa ating wikang pambansa. Inaasahang
-            magagamit ang proyektong ito upang payabungin ang katatasan at pagtibayin
-            ang ating pagmamahal sa ating wikang pambansa.
+            nilalayon nitong linaning at hasain ang karunungan ng mga manlalaro sa iba
+            pang mga katutubong wika sa Pilipinas. Kabilang sa mga espisipikong
+            salita na kasama rito ay ang Tagalog, Kapampangan, at Pangasinense. Ang
+            ninanais naming tagatanggap ng proyektong ito ay ang mga estudyante ng
+            University of the Philippines Baguio, partikular na ang mga mag-aaral ng
+            Wika I sa mga susunod na panahon.
           </p>
 
-          <p className="font-semibold text-[var(--text-primary)]">Dakal a Salamat!</p>
+          <p>
+            Ang larong ito ay isang simpleng paraan upang ang mga manlalaro ay
+            magkaroon ng kaalaman sa mga salitang kalimitang ginagamit ng mga
+            Pilipino sa kanilang pang-araw-araw na pakikipagtalastasan, partikular na
+            sa larangang agham tulad ng biyolohiya, matematika, pisika, at computer
+            science. Maaaring maturing na trivia ang mga halimbawa ng mga salitang
+            kabilang sa larong ito at kung papalarin, nais naming magamit ang
+            proyektong ito ng mga propesor ng nasabing unibersidad bilang midyum ng
+            panturo sa ating mga katutubong wika upang mabigyang pahalaga ang
+            proyektong aming ginawa at dinevelop sa pagkatuto ng mga mag-aaral ng
+            Wika I. Inaasahang magagamit ang proyektong ito upang payabungin ang
+            katatasan at pagtibayin ang ating pagmamahal sa ating wikang pambansa.
+          </p>
 
-          <p className="text-[var(--text-secondary)] italic">
-            (Pangasinan ng 'salamat')
+          <p>
+            Panghuli, bukas ang bawat miyembro ng pangkat Kanunutan sa mga
+            katanungan at dagdag mungkahi upang higit pa naming mapabuti ang nilalaman
+            ng aming proyekto.
+          </p>
+
+          <p className="font-semibold text-[var(--text-primary)]">
+            Salamat! / Dakel ya Salamat!(pangasinan / Dakal a Salamat!(kapampangan)
           </p>
         </section>
       </main>
